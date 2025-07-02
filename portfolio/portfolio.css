@@ -1,0 +1,98 @@
+.image-container {
+  position: relative;
+
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+ color: white;
+ font-size:18px;
+  font-family:"Nunito Sans", Arial, sans-serif"
+}
+.card-1row{
+    display: flex;
+    justify-content: space-between;
+ margin: 40px;
+ margin-top: 70px;
+}
+ 
+
+.card-1row img{
+   width: 250px;
+   height: 200px;
+
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+   padding: 8px 16px; 
+  text-decoration: none;
+}
+
+
+.pagination a:hover:not(.active) 
+{background-color:#97b1a6 ;}
+.pagination a {
+  border-radius: 5px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+@media screen and (max-width: 779px) {
+  .overlay-text {
+    font-size: 18px;
+  }
+
+  .card-1row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1row img {
+    width: 90%;
+    height: auto;
+margin: 20px;
+  }
+
+  .pagination a {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 780px) {
+  .overlay-text {
+    font-size: 32px;
+  }
+
+  .card-1row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .card-1row img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .pagination a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

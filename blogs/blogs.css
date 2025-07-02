@@ -1,0 +1,163 @@
+.image-container {
+  position: relative;
+
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+ color: white;
+ font-size:18px;
+  font-family:"Nunito Sans", Arial, sans-serif"
+}
+body{
+    background-color:whitesmoke;
+}
+.cards{
+display: flex;
+margin: 50px;
+justify-content:space-between ;
+}
+.sub-image{
+    background-color:white;
+  margin: 20px;
+  
+}
+.sub-text{
+padding: 10px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+   padding: 8px 16px; 
+  text-decoration: none;
+}
+
+
+.pagination a:hover:not(.active) 
+{background-color:#97b1a6 ;}
+.pagination a {
+  border-radius: 5px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* ---------- DEFAULT STYLES (applies to all screen sizes) ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+/* Default: Flex cards, allow wrapping */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.sub-card-div {
+  flex: 1 1 250px;
+  max-width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sub-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sub-text {
+  padding: 10px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #97b1a6;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .sub-card-div {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .overlay-text {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .image-container img {
+    height: auto;
+  }
+}
