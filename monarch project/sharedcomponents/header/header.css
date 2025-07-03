@@ -1,0 +1,103 @@
+.header{
+    margin-top: 50px;
+   align-items: center;
+
+}
+.options{
+display: flex;
+justify-content: space-between;
+margin-left: 30%;
+margin-right: 30%;
+margin-top: 30px;
+}
+.options a{
+    text-decoration: none;
+}
+
+
+ header {
+  text-align: center;
+  
+}
+
+
+ .logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  color:#97b1a6 ;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+
+ @media screen and (max-width: 770px) {
+
+  /* Prevent horizontal scrolling on small screens */
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Center and stack the header content */
+  .header {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .options {
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+  .options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 💡 This enables auto-wrapping */
+  gap: 15px;
+  margin: 30px auto;
+  max-width: 90%;
+}
+
+
+  .options a {
+    display: block;
+    font-size: 16px;
+    padding: 6px 0;
+    color: black;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
